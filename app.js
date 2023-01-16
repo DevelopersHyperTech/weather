@@ -37,7 +37,7 @@ app.post("/", function(req, res) {
       // res.write("<img src = " + imgUrl + ">")
       // res.write(icon);
 
-      res.render("response", {City: query, Description:weatherdescription, temparature: temp, speed: speed, pressure:pressure});
+      res.render("response", {City: query, Description:weatherdescription, temparature: temp, speed: speed, pressure:pressure, image: icon, humidity:humidity});
 
     })
   })

@@ -31,6 +31,7 @@ app.post("/", function(req, res) {
       const imgUrl = "http://openweathermap.org/img/wn/" + icon + "@2x.png"
       const speed = Math.floor(weatherData.wind.speed)
       const pressure = weatherData.main.pressure
+      const humidity = weatherData.main.humidity
       // res.write("<p>The weather is currently " + weatherdescription + "</p>");
       // res.write("<h1>The temparature in " + query + " is " + temp + " degree celcius.</h1>");
       //
